@@ -1,3 +1,16 @@
+// Ambil elemen video
+const video = document.getElementById("hoverVideo");
+
+// Mulai video saat hover
+video.addEventListener("mouseover", () => {
+  video.play();
+});
+
+// Jeda video saat kursor meninggalkan video
+video.addEventListener("mouseout", () => {
+  video.pause();
+});
+
 // Navbar Toggle
 const navSlide = () => {
   const burger = document.querySelector(".burger");
