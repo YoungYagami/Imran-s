@@ -15,7 +15,7 @@ img:not(.portfolio-item img) {
   --gap: 12px;
   --color: #ffd000;
 
-  width: 220px;
+  width: 250px;
   aspect-ratio: 1;
   box-sizing: border-box;
   border-radius: 50%;
@@ -54,7 +54,7 @@ img:not(.portfolio-item img) {
 
 img:hover:not(.portfolio-item img) {
   --angle: 0deg;
-  --gap: 5px;
+  --gap: 3px;
 }
 /* General Styles */
 body {
@@ -64,6 +64,7 @@ body {
   box-sizing: border-box;
   background-color: #5883ad;
   color: #ffffff;
+  padding-top: 30px;
 }
 
 header {
@@ -177,11 +178,6 @@ nav {
   max-width: 1100px;
   margin: 10px auto 0;
   text-align: left;
-}
-
-.about-content img {
-  flex-shrink: 0;
-  border-radius: 50%;
 }
 
 .about-content p {
@@ -307,8 +303,10 @@ footer {
     width: 50%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    background-color: #33300000;
-    backdrop-filter: blur(5px);
+    background-color: none;
+    gap: 24px;
+    text-align: center;
+    justify-content: center;
   }
 
   .about-content {
@@ -323,6 +321,20 @@ footer {
 
   .nav-links li {
     opacity: 0;
+    background-color: #333;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: 3px solid #fff;
+    width: 100px;
+    height: 20px;
+    transition: border-color 0.3s ease;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .nav-links li:hover {
+    border-color: #ffd000;
   }
 
   .nav-links.nav-active li {
